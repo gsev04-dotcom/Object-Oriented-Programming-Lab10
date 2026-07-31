@@ -110,3 +110,12 @@ Product.applyDiscount(store.inventory , 0.15);
 console.log("Total value after discount: $ " + store.getInventoryValue());
 
 
+//Find a product 
+let findProduct = store.findProductByName("Cheese");
+
+if(findProduct = null){
+    findProduct.toString();
+
+}else{
+console.log ("Product not found");
+}
