@@ -85,7 +85,7 @@ findProductby(name) {
 //Creating products and perishable products
 
 let product1 = new Product("Cereal", 2.50, 50);
-let product2 = new product("Water", 1.00, 10);
+let product2 = new Product("Water", 1.00, 10);
 let product3 = new Product("Milk", 3.00, 15);
 let product4 = new perishableProduct("Cheese", 5.00 , 8, "2026-01-08");
 let product5 = new perishableProduct("Yogurt", 8.95, 4, "2026-12-31");
