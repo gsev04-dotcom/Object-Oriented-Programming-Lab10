@@ -89,3 +89,15 @@ let product2 = new Product("Water", 1.00, 10);
 let product3 = new Product("Milk", 3.00, 15);
 let product4 = new perishableProduct("Cheese", 5.00 , 8, "2026-01-08");
 let product5 = new perishableProduct("Yogurt", 8.95, 4, "2026-12-31");
+
+
+//add store and products 
+let store = new Store();
+
+store.addProduct(product1);
+store.addProduct(product2);
+store.addProduct(product3);
+store.addProduct(product4);
+store.addProduct(product5);
+
+
