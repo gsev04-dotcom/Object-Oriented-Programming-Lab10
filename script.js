@@ -18,7 +18,16 @@ class Product {
         console.log('Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity} ');
     }
 
+
+    //static method to apply discount 
+static applyDiscount(products,discount) {
+    for (let eachProduct of products) {
+        eachProduct.price = eachProduct.price-(eachProduct.price * .10);
+    }
 }
+}
+
+
 
 class perishableProduct extends Product {
     constructor(name,price,quantity,expirationDate) {
@@ -33,13 +42,6 @@ overridetoString() {
 }
 
 
-
-//static method to apply discount 
-static applyDiscount(products,discount) {
-    for (let eachProduct of products) {
-        eachProduct.price = eachProduct.price-(eachProduct.price * .10);
-    }
-}
 }
 
 
@@ -64,7 +66,7 @@ getInventoryValue() {
     }
 
 
-return totalInventory();
+return totalInventory;
 }
 
 
@@ -73,11 +75,11 @@ return totalInventory();
 
 findProductby(name) {
     for(let eachProduct of this.inventory) {
-        if (product.name == name) {
+        if (eachProduct.name === name) {
             return product;
         }
     }
-        return null
+        return null;
 }
 
 }
