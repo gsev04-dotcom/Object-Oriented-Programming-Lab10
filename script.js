@@ -62,7 +62,7 @@ getInventoryValue() {
     let totalInventory = 0;
 
     for(let eachProduct of this.inventory) {
-        totalInventory = totalInventory + eachProduct.getInventoryValue();
+        totalInventory = totalInventory + eachProduct.gettotalValue();
     }
 
 
