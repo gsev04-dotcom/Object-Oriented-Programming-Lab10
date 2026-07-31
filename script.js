@@ -103,8 +103,8 @@ store.addProduct(product5);
 
 //Display inventory before and after discount
 console.log("Total value before discount : $ " + store.getInventoryValue());
-product.applyDiscount(store.inventory * 0.15);
+Product.applyDiscount(store.inventory , 0.15);
 
-console.log("Total value after discount: $ " + store.getTotalValue());
+console.log("Total value after discount: $ " + store.getInventoryValue());
 
 
