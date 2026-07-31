@@ -114,13 +114,13 @@ console.log("Total value after discount: $ " + store.getInventoryValue());
 let products = ["Cheese", "Milk", "Bread", "Chicken", "Yogurt"];
 
 for (let eachProduct of products) {
-let findProduct = store.findProductByName(productName);
+let findProduct = store.findProductByName(eachProduct);
 
 
 if(findProduct !== null){
     findProduct.toString();
 
 }else{
-console.log(`${productName} - Product not found`);
+console.log(`${eachProduct} - Product not found`);
 }
 }
