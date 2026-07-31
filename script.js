@@ -67,4 +67,17 @@ getInventoryValue() {
 return totalInventory();
 }
 
+
+
+//Find a product by  the name
+
+findProductby(name) {
+    for(let eachProduct of this.inventory) {
+        if (product.name == name) {
+            return product;
+        }
+    }
+        return null
+}
+
 }
