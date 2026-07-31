@@ -41,3 +41,11 @@ static applyDiscount(products,discount) {
     }
 }
 }
+
+
+class Store {
+    constructor() {
+        this.inventory =[]; //Empty array to hold all products
+    }
+    
+    }
