@@ -33,3 +33,11 @@ overridetoString() {
 }
 
 }
+
+//static method to apply discount 
+
+static applyDiscount(products,discount) {
+    for (let eachProduct of products) {
+        eachProduct.price = eachProduct.price-(eachProduct.price * .10);
+    }
+}
