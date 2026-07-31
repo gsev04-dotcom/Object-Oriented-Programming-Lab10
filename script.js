@@ -28,5 +28,8 @@ class perishableProduct extends Product {
 
 }
 
+overridetoString() {
+    console.log('Product:${this.name}, Price: ${this.price}, Quantity: ${this.quantity }, ExpirationDAte ${this.expirationDate}');
+}
 
 }
