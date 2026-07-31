@@ -10,4 +10,11 @@ class Product {
     getTotalValue() {
         return this.price*this.quantity;
     }
+
+
+    //Method to display product details
+
+    toString() {
+        console.log('Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity} ');
+    }
 }
