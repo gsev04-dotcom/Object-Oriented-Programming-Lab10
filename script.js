@@ -32,12 +32,12 @@ overridetoString() {
     console.log('Product:${this.name}, Price: ${this.price}, Quantity: ${this.quantity }, ExpirationDAte ${this.expirationDate}');
 }
 
-}
+
 
 //static method to apply discount 
-
 static applyDiscount(products,discount) {
     for (let eachProduct of products) {
         eachProduct.price = eachProduct.price-(eachProduct.price * .10);
     }
+}
 }
