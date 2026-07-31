@@ -73,7 +73,7 @@ return totalInventory;
 
 //Find a product by  the name
 
-findProductby(name) {
+findProductbyName(name) {
     for(let eachProduct of this.inventory) {
         if (eachProduct.name === name) {
             return eachProduct;
