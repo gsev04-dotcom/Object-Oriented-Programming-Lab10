@@ -8,21 +8,21 @@ class Product {
 
     //Method to calculate the total value
     getTotalValue() {
-        return this.price*this.quantity;
+        return this.price * this.quantity;
     }
 
 
     //Method to display product details
 
     toString() {
-        console.log('Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity} ');
+        console.log(`Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
     }
 
 
     //static method to apply discount 
 static applyDiscount(products,discount) {
     for (let eachProduct of products) {
-        eachProduct.price = eachProduct.price-(eachProduct.price * .10);
+        eachProduct.price = eachProduct.price-(eachProduct.price * discount);
     }
 }
 }
@@ -37,8 +37,8 @@ class perishableProduct extends Product {
 
 }
 
-overridetoString() {
-    console.log('Product:${this.name}, Price: ${this.price}, Quantity: ${this.quantity }, ExpirationDAte ${this.expirationDate}');
+toString() {
+    console.log(`Product:${this.name}, Price: ${this.price}, Quantity: ${this.quantity }, ExpirationDAte ${this.expirationDate}`);
 }
 
 
@@ -62,7 +62,7 @@ getInventoryValue() {
     let totalInventory = 0;
 
     for(let eachProduct of this.inventory) {
-        totalInventory = totalInventory + eachProduct.gettotalValue();
+        totalInventory = totalInventory + eachProduct.getTotalValue();
     }
 
 
@@ -76,7 +76,7 @@ return totalInventory;
 findProductby(name) {
     for(let eachProduct of this.inventory) {
         if (eachProduct.name === name) {
-            return product;
+            return eachProduct;
         }
     }
         return null;
