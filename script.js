@@ -17,4 +17,16 @@ class Product {
     toString() {
         console.log('Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity} ');
     }
+
+
+
+class PerishableProduct extends Product {
+    constructor(name,price,quantity,expirationDate) {
+        super(name,price,quantity)
+        this.expirationDate = expirationDate;
+
+
+}
+
+
 }
