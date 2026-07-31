@@ -29,7 +29,7 @@ static applyDiscount(products,discount) {
 
 
 
-class perishableProduct extends Product {
+class PerishableProduct extends Product {
     constructor(name,price,quantity,expirationDate) {
         super(name,price,quantity)
         this.expirationDate = expirationDate;
@@ -38,7 +38,7 @@ class perishableProduct extends Product {
 }
 
 toString() {
-    console.log(`Product:${this.name}, Price: ${this.price}, Quantity: ${this.quantity }, ExpirationDAte ${this.expirationDate}`);
+    console.log(`Product:${this.name}, Price: ${this.price}, Quantity: ${this.quantity }, Expiration Date ${this.expirationDate}`);
 }
 
 
@@ -73,7 +73,7 @@ return totalInventory;
 
 //Find a product by  the name
 
-findProductbyName(name) {
+findProductByName(name) {
     for(let eachProduct of this.inventory) {
         if (eachProduct.name === name) {
             return eachProduct;
@@ -89,8 +89,8 @@ findProductbyName(name) {
 let product1 = new Product("Cereal", 2.50, 50);
 let product2 = new Product("Water", 1.00, 10);
 let product3 = new Product("Milk", 3.00, 15);
-let product4 = new perishableProduct("Cheese", 5.00 , 8, "2026-01-08");
-let product5 = new perishableProduct("Yogurt", 8.95, 4, "2026-12-31");
+let product4 = new PerishableProduct("Cheese", 5.00 , 8, "2026-01-08");
+let product5 = new PerishableProduct("Yogurt", 8.95, 4, "2026-12-31");
 
 
 //add store and products 
