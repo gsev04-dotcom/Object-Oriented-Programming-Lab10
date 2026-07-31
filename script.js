@@ -113,7 +113,7 @@ console.log("Total value after discount: $ " + store.getInventoryValue());
 //Find a product 
 let findProduct = store.findProductByName("Cheese");
 
-if(findProduct = null){
+if(findProduct !== null){
     findProduct.toString();
 
 }else{
